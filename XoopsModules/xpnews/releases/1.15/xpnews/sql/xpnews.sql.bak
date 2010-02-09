@@ -7,7 +7,6 @@ CREATE TABLE `xpnews_newsgroups` (
                           PRIMARY KEY (`id`)                                      
                         ) ENGINE=MYISAM;
 
-
 CREATE TABLE `xpnews_servers` (                     
                        `server_id` INT(12) UNSIGNED NOT NULL AUTO_INCREMENT,  
                        `name` VARCHAR(128) DEFAULT NULL,                      
