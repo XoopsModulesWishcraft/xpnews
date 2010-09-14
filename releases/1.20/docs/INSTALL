@@ -1,0 +1,90 @@
+:: MODULE :: Xortify - 1.16
+
+:: AUTHOR :: simon@chronolabs.org.au
+
+:: PUBLISHER :: simon@chronolabs.org.au
+
+:: DATE :: Wednesday, March 03, 2010
+
+:: INSTALLATION
+
+Copy the folder contained within the archives htdocs folder into your xoops root path. The following files marked with an $ are vital to 
+the runtime operation of the content module. The ones marked with a # are for a system patch in bugs in 2.4.4 series and earlier with the 
+eractica of early releases.
+
+The .htaccess for SEO file marked below with % is for your SEO .htaccess file in the root path of your xoops, you need to edit this file there
+and copy the content into the top of the .htaccess script.
+
+---[ xoops2.4_xortify_1.16.zip ]----------------------------------------------------------------------------------------------------------------
+
+^ docs
+$ htdocs
+^ docs\dirlist.txt
+^ docs\End User License.pdf
+^ docs\INSTALL
+^ docs\Terms Cond 1.2c.pdf
+$ htdocs\modules
+$ htdocs\modules\xortify
+$ htdocs\modules\xortify\admin
+$ htdocs\modules\xortify\class
+$ htdocs\modules\xortify\images
+$ htdocs\modules\xortify\include
+$ htdocs\modules\xortify\index.html
+$ htdocs\modules\xortify\language
+$ htdocs\modules\xortify\preloads
+$ htdocs\modules\xortify\providers
+$ htdocs\modules\xortify\templates
+$ htdocs\modules\xortify\xoops_version.php
+$ htdocs\modules\xortify\admin\index.php
+$ htdocs\modules\xortify\admin\menu.php
+$ htdocs\modules\xortify\class\auth
+$ htdocs\modules\xortify\class\index.html
+$ htdocs\modules\xortify\class\nusoap
+$ htdocs\modules\xortify\class\soap.php
+$ htdocs\modules\xortify\class\auth\auth.php
+$ htdocs\modules\xortify\class\auth\authfactory.php
+$ htdocs\modules\xortify\class\auth\auth_soap.php
+$ htdocs\modules\xortify\class\auth\auth_soap_provisionning.php
+$ htdocs\modules\xortify\class\nusoap\changelog
+$ htdocs\modules\xortify\class\nusoap\class.nusoap_base.php
+$ htdocs\modules\xortify\class\nusoap\class.soapclient.php
+$ htdocs\modules\xortify\class\nusoap\class.soap_fault.php
+$ htdocs\modules\xortify\class\nusoap\class.soap_parser.php
+$ htdocs\modules\xortify\class\nusoap\class.soap_server.php
+$ htdocs\modules\xortify\class\nusoap\class.soap_transport_http.php
+$ htdocs\modules\xortify\class\nusoap\class.soap_val.php
+$ htdocs\modules\xortify\class\nusoap\class.wsdl.php
+$ htdocs\modules\xortify\class\nusoap\class.wsdlcache.php
+$ htdocs\modules\xortify\class\nusoap\class.xmlschema.php
+$ htdocs\modules\xortify\class\nusoap\index.html
+$ htdocs\modules\xortify\class\nusoap\nusoap.php
+$ htdocs\modules\xortify\class\nusoap\nusoapmime.php
+$ htdocs\modules\xortify\images\accessdenied.png
+$ htdocs\modules\xortify\images\accesslist.png
+$ htdocs\modules\xortify\images\index.html
+$ htdocs\modules\xortify\images\Thumbs.db
+$ htdocs\modules\xortify\images\xortify_slogo.png
+$ htdocs\modules\xortify\include\forms.objects.php
+$ htdocs\modules\xortify\include\forms.xortify.php
+$ htdocs\modules\xortify\include\functions.php
+$ htdocs\modules\xortify\include\post.loader.footer.php
+$ htdocs\modules\xortify\include\post.loader.mainfile.php
+$ htdocs\modules\xortify\include\pre.loader.mainfile.php
+$ htdocs\modules\xortify\language\english
+$ htdocs\modules\xortify\language\index.html
+$ htdocs\modules\xortify\language\english\admin.php
+$ htdocs\modules\xortify\language\english\index.html
+$ htdocs\modules\xortify\language\english\main.php
+$ htdocs\modules\xortify\language\english\modinfo.php
+$ htdocs\modules\xortify\preloads\core.php
+$ htdocs\modules\xortify\preloads\index.html
+$ htdocs\modules\xortify\providers\index.html
+$ htdocs\modules\xortify\providers\protector
+$ htdocs\modules\xortify\providers\providers.php
+$ htdocs\modules\xortify\providers\xortify
+$ htdocs\modules\xortify\providers\protector\footer.post.loader.php
+$ htdocs\modules\xortify\providers\protector\index.html
+$ htdocs\modules\xortify\providers\xortify\footer.post.loader.php
+$ htdocs\modules\xortify\providers\xortify\index.html
+$ htdocs\modules\xortify\providers\xortify\post.loader.php
+$ htdocs\modules\xortify\templates\index.html
