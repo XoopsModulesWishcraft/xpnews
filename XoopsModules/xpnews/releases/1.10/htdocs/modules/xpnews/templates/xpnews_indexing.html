@@ -1,0 +1,66 @@
+<script type="text/javascript">
+function initPage(pgidx) {
+	pgidx.length = $totalpg;
+	for( i = 0 ; i < $totalpg; i++ ) {
+		pg = i+1;
+		pgidx.options[i].text = pg;
+		pgidx.options[i].value = pg;
+	}
+	pgidx.selectedIndex = $page-1;
+}
+
+function changePage(pgidx) {
+	window.location = '<{$pageurl}>'+pgidx.options[pgidx.selectedIndex].value;
+}
+</script>
+
+<script type="text/javascript">
+  initPage(document.select.pgidx);
+</script>
+
+<div class="news-reader">
+	<div style="clear:both;">
+        <div class="indexing-header" style="width:80%; float:left; display:block;"><h2><{$newsgroup}></h2></div>
+        <div class="indexing-header" style="width:20%; float:left; display:block;">
+          <div align="right"><a href="./index.php">Group List</a></div>
+        </div>
+	</div>
+    <div style="clear:both; width:100%; ">
+    	<div class="head" style="width:100%; height:1.35em;">
+        	<div style="width:10%; float:left">
+        	  <div align="left">Num</div>
+        	</div>
+            <div style="width:45%; float:left">Subject</div>
+            <div style="width:30%; float:left">
+              <div align="center">Author</div>
+            </div>
+            <div style="width:15%; float:right">
+              <div align="right">Time</div>
+            </div>
+		</div>
+        <{foreach item=post from=$posts}>
+        <div class="<{$post.class}>" style="width:100%; height:1.15em;">
+        	<div style="width:10%; float:left">
+        	  <div align="left"><{$post.num}></div>
+        	</div>
+            <div style="width:45%; float:left"><{$post.subject}></div>
+            <div style="width:30%; float:left">
+              <div align="center"><{$post.author}></div>
+            </div>
+            <div style="width:15%; float:right">
+              <div align="right"><{$post.time}></div>
+            </div>
+		</div>
+       <{/foreach}>
+    </div>
+    <div class="foot" style="width:100%; height:1.15em;">
+    	<div style="float:left; width:10%; text-align:center; margin-left:10px; margin-right:10px;"><{if $first_link}><a href="<{$first_link}>"><{/if}>First<{if $first_link}></a><{/if}></div>
+    	<div style="float:left; width:10% text-align:center; margin-left:10px; margin-right:10px;"><{if $previous_link}><a href="<{$previous_link}>"><{/if}>Previous<{if $previous_link}></a><{/if}></div>
+    	<div style="float:left; width:10% text-align:center; margin-left:10px; margin-right:10px;"><{if $next_link}><a href="<{$next_link}>"><{/if}>Next<{if $next_link}></a><{/if}></div>
+
+    	<div style="float:left; width:10% text-align:center; margin-left:10px; margin-right:10px;"><{if $last_link}><a href="<{$last_link}>"><{/if}>Last<{if $last_link}></a><{/if}></div>
+    	<div style="float:left; width:10% text-align:center; margin-left:10px; margin-right:10px;"><{if $refresh_link}><a href="<{$refresh_link}>"><{/if}>Refresh<{if $refresh_link}></a><{/if}></div> 
+        <div style="float:left; width:40% text-align:center; margin-left:10px; margin-right:10px;"><{$pages}></div>                        
+        <div style="float:right; width:10% text-align:center; margin-left:10px; margin-right:10px;"><{if $post_link}><{$post_link}><{/if}></div>
+    </div>
+</div>

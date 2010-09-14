@@ -1,0 +1,23 @@
+<div class="news-reader">
+	<div style="float:left; width:15%">
+    	<{foreach item=server from=$servers}>
+        <div style="display:block; width:100%" class="server-node"><center><a href="<{$server.link}>"><{$server.title}></a></center></div>
+        <{/foreach}>
+    </div>
+    <div style="float:left; width:83%">
+    	<div class="head" style="width:100%; clear:both; height: 1.2em;">
+        	<div style="width:10%; float:left">Num</div>
+            <div style="width:10%; float:left">Posts</div>
+            <div style="width:50%; float:left">Newsgroup</div>
+            <div style="width:20%; float:left">Description</div>
+		</div>
+    	<{foreach item=group from=$news_groups}>
+        <div class="<{$group.class}>" style="clear:both; width:100%; height: 1.05em;">
+        	<div style="width:10%; float:left"><{$group.num}></div>
+            <div style="width:10%; float:left"><{$group.posts}></div>
+            <div style="width:50%; float:left"><{$group.newsgroup}></div>
+            <div style="width:20%; float:left"><{$group.description}></div>
+		</div>
+        <{/foreach}>
+    </div>
+</div>
