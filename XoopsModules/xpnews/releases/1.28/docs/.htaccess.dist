@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^indexing,([0-9]+),(.*?)(.?) modules/xpnews/indexing.php?category=$1&group=$2
+RewriteRule ^indexing,cursor,([0-9]+),(.*?),([0-9]+)(.?) modules/xpnews/indexing.php?category=$1&group=$2&cursor=$3
+RewriteRule ^indexing,paginated,([0-9]+),(.*?),([0-9]+)(.?) modules/xpnews/indexing.php?category=$1&group=$2&page=$3
+RewriteRule ^read,([0-9]+),(.*?),([0-9]+),(.*?)(.?) modules/xpnews/read.php?category=$1&group=$2&artnum=$3
+RewriteRule ^read,([0-9]+),(.*?),([0-9]+),(.*?)(.?)?header modules/xpnews/read.php?category=$1&group=$2&artnum=$3&header=1
+RewriteRule ^list,(.*?),([0-9]+)(.?) modules/xpnews/index.php?category=$2

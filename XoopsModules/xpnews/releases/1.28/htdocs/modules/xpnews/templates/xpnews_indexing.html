@@ -1,0 +1,36 @@
+<div class="news-reader">
+	<div style="clear:both;">
+        <div class="indexing-header" style="width:80%; float:left; display:block;"><h2><{$newsgroup}></h2></div>
+        <div class="indexing-header" style="width:20%; float:left; display:block;">
+          <div align="right"><a href="index.php">Group List</a></div>
+        </div>
+	</div>
+    <div style="clear:both; height:0.5em;">&nbsp;</div>    
+    <table>
+    <tr style="clear:both; width:100%; ">
+    	<th class="head" style="height:1.35em;">Num</th>
+        <th style="width:45%;">Subject</th>
+        <th style="width:30%; text-align:center;">Author</th>
+        <th style="width:15%; text-align:right">Time</th>
+	</tr>
+        <{foreach item=post from=$posts}>
+        <tr class="<{$post.class}>" style="width:100%; height:1.15em;">
+       	  <td align="left"><{$post.num}></td>
+          <td style="width:45%;"><{$post.subject}></td>
+          <td style="width:30%; text-align:center;"><{$post.author}></td>
+          <td style="width:15%; text-align:right"><{$post.time}></td>
+		</tr>
+       <{/foreach}>
+    </table>
+    <div style="clear:both; height:0.5em;">&nbsp;</div>
+    <div class="foot" style="width:100%; height:1.15em;">
+    	<div style="float:left; width:10%; text-align:center; margin-left:10px; margin-right:10px;"><{if $first_link}><a href="<{$first_link}>"><{/if}>First<{if $first_link}></a><{/if}></div>
+    	<div style="float:left; width:10% text-align:center; margin-left:10px; margin-right:10px;"><{if $previous_link}><a href="<{$previous_link}>"><{/if}>Previous<{if $previous_link}></a><{/if}></div>
+    	<div style="float:left; width:10% text-align:center; margin-left:10px; margin-right:10px;"><{if $next_link}><a href="<{$next_link}>"><{/if}>Next<{if $next_link}></a><{/if}></div>
+
+    	<div style="float:left; width:10% text-align:center; margin-left:10px; margin-right:10px;"><{if $last_link}><a href="<{$last_link}>"><{/if}>Last<{if $last_link}></a><{/if}></div>
+    	<div style="float:left; width:10% text-align:center; margin-left:10px; margin-right:10px;"><{if $refresh_link}><a href="<{$refresh_link}>"><{/if}>Refresh<{if $refresh_link}></a><{/if}></div> 
+        <div style="float:left; width:40% text-align:center; margin-left:10px; margin-right:10px;"><form><select onchange="window.open(this.options[this.selectedIndex].value,'_top')"><{foreach from=$pages item=page}><option value="<{$page.value}>"<{$page.select}>><{$page.text}></option><{/foreach}></select></form></div>
+        <div style="float:right; width:10% text-align:center; margin-left:10px; margin-right:10px;"><{if $post_link}><{$post_link}><{/if}></div>
+    </div>
+</div>

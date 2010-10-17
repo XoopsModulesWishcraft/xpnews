@@ -1,0 +1,38 @@
+<div class="news-reader">
+	<div style="clear:both; display:block; height:3.5em;" class="head">
+        <div class="read-header" style="width:50%; float:left; display:block;"><h2><{$newsgroup}></h2></div>
+        <div class="read-header" style="width:20%; float:left; display:block;">
+          <div align="center"><a href="<{$show_header}>">Show Header</a></div>
+        </div>
+        <div class="read-header" style="width:15%; float:left; display:block;"><{if $first_link}><a href="<{$first_link}>"><{/if}>First<{if $first_link}></a><{/if}></div>
+        <div class="read-header" style="width:15%; float:left; display:block;"><{if $previous_link}><a href="<{$previous_link}>"><{/if}>Previous<{if $previous_link}></a><{/if}></div>
+	</div>
+    <div style="clear:both; display:block;" class="head">
+    	<div class="read-subject" style="width:100%; clear:both; height:1.4em;">Subject: <{$subject}></div>
+        <div class="read-author" style="width:100%; clear:both; height:1.4em;">From: <{$from}></div>
+        <div class="read-author" style="width:100%; clear:both; height:1.4em;">Newgroups: <{$to}></div>        
+        <div class="read-time" style="width:100%; clear:both; height:1.4em;">Time: <{$time}></div>        
+        <div class="read-subtitle" style="width:100%; clear:both;"><{if $subtitle}><{$subtitle}><{else}>&nbsp;<{/if}></div>        
+    </div>
+    <{if $attachments}>
+    	<div style="clear:both;">
+        <span>Attachments: </span>
+        <{foreach item=attachment from=$attachments}>
+        	<span style="margin-left:15px; margin-right:15px;"><a href="<{$attachment.url}>"><{$attachment.name}></a></span>
+        <{/foreach}>
+        </div>
+    <{/if}>
+    <div style="clear:both; display:block" class="read-message">
+    	<{if $showing_header}><pre><{foreach item=header from=$headers}><{$header}><{/foreach}></pre><{/if}>
+    	<{if $pre}><pre><{/if}><{$message}><{if $pre}></pre><{/if}>
+    </div>
+    <div style="height:1.4em;" class="foot">
+    	<div style="float:left; width:14% text-align:center; margin-left:10px; margin-right:10px;"><{if $previous_link}><a href="<{$previous_link}>"><{/if}>Previous<{if $previous_link}></a><{/if}></div>
+    	<div style="float:left; width:14% text-align:center; margin-left:10px; margin-right:10px;"><{if $next_link}><a href="<{$next_link}>"><{/if}>Next<{if $next_link}></a><{/if}></div>
+    	<div style="float:left; width:14%; text-align:center; margin-left:10px; margin-right:10px;"><{if $article_list}><a href="<{$article_list}>"><{/if}>First<{if $article_list}></a><{/if}></div>
+    	<div style="float:left; width:14% text-align:center; margin-left:10px; margin-right:10px;"><{if $reply_link}><{$reply_link}><{/if}></div>
+        <div style="float:left; width:14% text-align:center; margin-left:10px; margin-right:10px;"><{if $crosspost_link}><{$crosspost_link}><{/if}></div>
+    	<div style="float:left; width:14% text-align:center; margin-left:10px; margin-right:10px;"><{if $forward_link}><{$forward_link}><{/if}></div> 
+    	<div style="float:left; width:14% text-align:center; margin-left:10px; margin-right:10px;"><{if $favorite_link}><a href="<{$favorite_link}>"><{/if}>Favorite<{if $favorite_link}></a><{/if}></div> 
+    </div>
+</div>
