@@ -17,14 +17,14 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
-define( 'SHOW_HYPER_LINK',  1 );
-define( 'SHOW_SIGNATURE',   2 );
-define( 'SPACE_ASIS',       4 );
-define( 'SHOW_NULL_LINE',   8 );
-define( 'SHOW_HEADER',     16 );
-define( 'FILTER_ANSI',     32 );
-define( 'IMAGE_INLINE',    64 );
-define( 'HIDE_EMAIL',     128 );
+define('SHOW_HYPER_LINK',  1 );
+define('SHOW_SIGNATURE',   2 );
+define('SPACE_ASIS',       4 );
+define('SHOW_NULL_LINE',   8 );
+define('SHOW_HEADER',     16 );
+define('FILTER_ANSI',     32 );
+define('IMAGE_INLINE',    64 );
+define('HIDE_EMAIL',     128 );
 
 $php_news_agent = "PHP News Reader $pnews_version (CDSHEEN)";
 
