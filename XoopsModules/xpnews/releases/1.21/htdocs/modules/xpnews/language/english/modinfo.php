@@ -1,10 +1,10 @@
 <?php
-	define('XNP_CACHEHOURS_DESC', 'Number of hours and hour cache is held');
-	define('XNP_CACHEHOURS', 'Length of Cache Time');
-	define('XNP_CACHEDAYS_DESC', 'Number of days and daily cache is held');
-	define('XNP_CACHEDAYS', 'Length of Cache Time');
-	define('XNP_SEOFILETYPE', 'SEO Filetype');
-	define('XNP_SEOFILETYPE_DESC', 'Filetype or extension given to htaccess redirection!');	
+	define('XNP_CACHEHOURS_DESC','Number of hours and hour cache is held');
+	define('XNP_CACHEHOURS','Length of Cache Time');
+	define('XNP_CACHEDAYS_DESC','Number of days and daily cache is held');
+	define('XNP_CACHEDAYS','Length of Cache Time');
+	define('XNP_SEOFILETYPE','SEO Filetype');
+	define('XNP_SEOFILETYPE_DESC','Filetype or extension given to htaccess redirection!');	
 	define('XNP_HTACCESS','.htaccess SEO');
 	define('XNP_HTACCESS_DESC','Enable .htaccess SEO URL Rewrite');
 	define('XNP_TITLE','Title of Module');
@@ -29,13 +29,13 @@
 	define('XNP_DECODEPATH_DESC','This is the path for decoded files to appear in (must be writable)');	
 	define('XNP_DECODEPATHACCESS','This is the URL for the decode path');
 	define('XNP_DECODEPATHACCESS_DESC','Must be relative to decode path');	
-	define('XNP_CACHEINDEX', 'Cache the index');
-	define('XNP_CACHEINDEX_DESC', 'Cache the index every time once at this unix date stamp.');
-	define('XNP_CACHEINDEXLAST', 'Cache Index Unix Timestamp');
-	define('XNP_CACHEINDEXLAST_DESC', 'Cache the index every time once at the period after this unix date stamp.');
+	define('XNP_CACHEINDEX','Cache the index');
+	define('XNP_CACHEINDEX_DESC','Cache the index every time once at this unix date stamp.');
+	define('XNP_CACHEINDEXLAST','Cache Index Unix Timestamp');
+	define('XNP_CACHEINDEXLAST_DESC','Cache the index every time once at the period after this unix date stamp.');
 	
 	// Menus
-	define('XNP_ADMINMENU1', 'Newsgroup Configuration');
-	define('XNP_ADMINMENU2', 'File Pruning');
-	define('XNP_ADMINMENU3', 'Permissions');	
+	define('XNP_ADMINMENU1','Newsgroup Configuration');
+	define('XNP_ADMINMENU2','File Pruning');
+	define('XNP_ADMINMENU3','Permissions');	
 ?>

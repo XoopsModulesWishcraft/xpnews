@@ -22,13 +22,13 @@
 	define('XNP_DECODEPATH_DESC','This is the path for decoded files to appear in (must be writable)');	
 	define('XNP_DECODEPATHACCESS','This is the URL for the decode path');
 	define('XNP_DECODEPATHACCESS_DESC','Must be relative to decode path');	
-	define('XNP_CACHEINDEX', 'Cache the index');
-	define('XNP_CACHEINDEX_DESC', 'Cache the index every time once at this unix date stamp.');
-	define('XNP_CACHEINDEXLAST', 'Cache Index Unix Timestamp');
-	define('XNP_CACHEINDEXLAST_DESC', 'Cache the index every time once at the period after this unix date stamp.');
+	define('XNP_CACHEINDEX','Cache the index');
+	define('XNP_CACHEINDEX_DESC','Cache the index every time once at this unix date stamp.');
+	define('XNP_CACHEINDEXLAST','Cache Index Unix Timestamp');
+	define('XNP_CACHEINDEXLAST_DESC','Cache the index every time once at the period after this unix date stamp.');
 	
 	// Menus
-	define('XNP_ADMINMENU1', 'Newsgroup Configuration');
-	define('XNP_ADMINMENU2', 'File Pruning');
-	define('XNP_ADMINMENU3', 'Permissions');	
+	define('XNP_ADMINMENU1','Newsgroup Configuration');
+	define('XNP_ADMINMENU2','File Pruning');
+	define('XNP_ADMINMENU3','Permissions');	
 ?>

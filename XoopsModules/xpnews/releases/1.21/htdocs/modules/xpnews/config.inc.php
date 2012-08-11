@@ -2,8 +2,8 @@
 
 include ('../../mainfile.php');
 
-define( 'on',  true,  true );
-define( 'off', false, true );
+define('on',  true,  true );
+define('off', false, true );
 
 
 global $xoopsModuleConfig;
